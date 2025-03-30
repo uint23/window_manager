@@ -20,12 +20,6 @@ static void run();
 static void selinputs();
 static void spawn(Arg *arg);
 
-typedef struct {
-	unsigned int mask;
-	KeySym key;
-	void (*fn) (Arg*);
-} Bind;
-
 static Window 	root;
 static Display *dpy 	= NULL;
 static Bool		running	= False;
